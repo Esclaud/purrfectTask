@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="53dp" />
+
+        <Button
+            android:id="@+id/btnNotes"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:contentDescription="TODO"
+            android:text="Create Notes" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="66dp" />
+
+        <GridLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignBounds"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:rowCount="12"
+            android:useDefaultMargins="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnDoc1"
+                    android:layout_width="122dp"
+                    android:layout_height="89dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#ffffff"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@mipmap/folder_foreground"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtDoc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnDoc1"
+                    android:layout_centerHorizontal="true"
+                    android:text="Document1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnDoc2"
+                    android:layout_width="122dp"
+                    android:layout_height="89dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#ffffff"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@mipmap/folder_foreground"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtDoc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnDoc2"
+                    android:layout_centerHorizontal="true"
+                    android:text="Document2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnDoc3"
+                    android:layout_width="122dp"
+                    android:layout_height="89dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#ffffff"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@mipmap/folder_foreground"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtDoc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnDoc3"
+                    android:layout_centerHorizontal="true"
+                    android:text="Document3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="118dp"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnDoc4"
+                    android:layout_width="122dp"
+                    android:layout_height="89dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#ffffff"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@mipmap/folder_foreground"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtDoc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnDoc4"
+                    android:layout_centerHorizontal="true"
+                    android:text="Document4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnDoc5"
+                    android:layout_width="122dp"
+                    android:layout_height="89dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#ffffff"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@mipmap/folder_foreground"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtDoc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnDoc5"
+                    android:layout_centerHorizontal="true"
+                    android:text="Document5" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnDoc6"
+                    android:layout_width="122dp"
+                    android:layout_height="89dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#ffffff"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@mipmap/folder_foreground"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtDoc6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnDoc6"
+                    android:layout_centerHorizontal="true"
+                    android:text="Document6" />
+
+            </RelativeLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

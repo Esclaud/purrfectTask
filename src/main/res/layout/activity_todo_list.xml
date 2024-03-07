@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/homepage_gradient"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnMenu"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="41dp" />
+
+            <EditText
+                android:id="@+id/editTextTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter task"
+                android:minHeight="48dp"
+                android:autofillHints=""
+                android:inputType="text"
+                tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+            <LinearLayout
+                android:id="@+id/deadlineLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deadline: "
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp" />
+
+                <Button
+                    android:id="@+id/buttonSetDeadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Deadline" />
+
+                <TextView
+                    android:id="@+id/textViewDeadlineTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="56sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:id="@+id/buttonAddTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Task" />
+
+            <ListView
+                android:id="@+id/listViewTasks"
+                android:layout_width="match_parent"
+                android:layout_height="471dp"
+                android:layout_marginTop="16dp"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

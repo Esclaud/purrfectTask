@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_themes"
+        android:title="Themes">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_default"
+                    android:title="Default" />
+                <item
+                    android:id="@+id/menu_purple"
+                    android:title="Moon purple" />
+
+                <item
+                    android:id="@+id/menu_decent"
+                    android:title="Decent" />
+
+                <item
+                    android:id="@+id/menu_candy"
+                    android:title="Cotton candy" />
+            </group>
+        </menu>
+    </item>
+</menu>
